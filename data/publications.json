@@ -1,0 +1,94 @@
+{
+  "journals": [
+    {
+      "title": "An Adaptive Cryptographic Intrusion Detection System for Software-Defined IoT Networks",
+      "authors": "P. Chinnasamy, R. Kumar, S. Venkatesh",
+      "journal": "IEEE Transactions on Network and Service Management",
+      "year": 2024,
+      "doi": "https://doi.org/10.1109/TNSM.2024.XXXXXX"
+    },
+    {
+      "title": "Blockchain-Enabled Privacy-Preserving Framework for Cybercrime Reporting Systems",
+      "authors": "P. Chinnasamy, A. Sharma, M. Patel",
+      "journal": "Journal of Information Security and Applications",
+      "year": 2024,
+      "doi": "https://doi.org/10.1016/j.jisa.2024.XXXXXX"
+    },
+    {
+      "title": "Quantum Cryptographic Protocols for Secure Smart Grid Communication",
+      "authors": "P. Chinnasamy, K. Raghavan, D. Singh",
+      "journal": "IEEE Access",
+      "year": 2023,
+      "doi": "https://doi.org/10.1109/ACCESS.2023.XXXXXX"
+    },
+    {
+      "title": "Deep Learning-Based Intrusion Detection for SDN-Enabled IoT Networks",
+      "authors": "P. Chinnasamy, S. Lakshmi, V. Krishnan",
+      "journal": "Computer Networks",
+      "year": 2023,
+      "doi": "https://doi.org/10.1016/j.comnet.2023.XXXXXX"
+    },
+    {
+      "title": "AI-Driven Malware Detection Using Hybrid Feature Extraction Techniques",
+      "authors": "P. Chinnasamy, T. Rajendran",
+      "journal": "Expert Systems with Applications",
+      "year": 2023,
+      "doi": "https://doi.org/10.1016/j.eswa.2023.XXXXXX"
+    },
+    {
+      "title": "Privacy Protection Framework for Multimodal Large Language Models in Healthcare",
+      "authors": "P. Chinnasamy, N. Gupta, R. Balasubramanian",
+      "journal": "Artificial Intelligence in Medicine",
+      "year": 2024,
+      "doi": "https://doi.org/10.1016/j.artmed.2024.XXXXXX"
+    }
+  ],
+  "conferences": [
+    {
+      "title": "Blockchain-Based Secure Data Sharing in Cloud Computing Environments",
+      "authors": "P. Chinnasamy, M. Patel, A. Kumar",
+      "conference": "IEEE International Conference on Cloud Computing (CLOUD)",
+      "year": 2024,
+      "doi": "https://doi.org/10.1109/CLOUD.2024.XXXXXX"
+    },
+    {
+      "title": "Federated Learning Approach for Privacy-Preserving Intrusion Detection",
+      "authors": "P. Chinnasamy, V. Anand, S. Priya",
+      "conference": "International Conference on Artificial Intelligence and Security (ICAIS)",
+      "year": 2023,
+      "doi": "https://doi.org/10.1007/978-3-031-XXXXX"
+    },
+    {
+      "title": "Smart Agriculture Disease Detection Using Transfer Learning",
+      "authors": "P. Chinnasamy, R. Sundaram, K. Meena",
+      "conference": "IEEE International Conference on Computing, Communication and Networking Technologies (ICCCNT)",
+      "year": 2023,
+      "doi": "https://doi.org/10.1109/ICCCNT.2023.XXXXXX"
+    },
+    {
+      "title": "Quantum Key Distribution Protocol for IoT Device Authentication",
+      "authors": "P. Chinnasamy, D. Singh, L. Ramesh",
+      "conference": "ACM International Conference on Security and Privacy in Communication Networks",
+      "year": 2022,
+      "doi": "https://doi.org/10.1145/XXXXXXX.XXXXXXX"
+    }
+  ],
+  "bookChapters": [
+    {
+      "title": "Advances in AI-Based Cybersecurity: Techniques and Applications",
+      "authors": "P. Chinnasamy, R. Kumar",
+      "book": "Handbook of Artificial Intelligence in Cybersecurity",
+      "publisher": "Springer",
+      "year": 2024,
+      "doi": "https://doi.org/10.1007/978-3-031-XXXXX"
+    },
+    {
+      "title": "Blockchain Technology for Secure Healthcare Data Management",
+      "authors": "P. Chinnasamy, A. Sharma",
+      "book": "Blockchain Applications in Healthcare Informatics",
+      "publisher": "Elsevier",
+      "year": 2023,
+      "doi": "https://doi.org/10.1016/B978-0-323-XXXXX"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "Natural Language Processing",
+            "code": "CS601",
+            "icon": "🗣️",
+            "description": "Fundamentals of NLP including text processing, sentiment analysis, and transformer models.",
+            "materials": [
+                {
+                    "title": "Introduction to NLP.pdf",
+                    "file": "uploads/course-materials/intro-nlp.pdf",
+                    "type": "pdf"
+                },
+                {
+                    "title": "Text Processing Techniques.ppt",
+                    "file": "uploads/course-materials/text-processing.ppt",
+                    "type": "ppt"
+                },
+                {
+                    "title": "Transformer Models.pdf",
+                    "file": "uploads/course-materials/transformers.pdf",
+                    "type": "pdf"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Computer Forensics",
+            "code": "CS602",
+            "icon": "🔍",
+            "description": "Digital forensics investigation techniques, evidence collection, and analysis methodologies.",
+            "materials": [
+                {
+                    "title": "Digital Forensics Overview.pdf",
+                    "file": "uploads/course-materials/forensics-overview.pdf",
+                    "type": "pdf"
+                },
+                {
+                    "title": "Evidence Collection Methods.ppt",
+                    "file": "uploads/course-materials/evidence-methods.ppt",
+                    "type": "ppt"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Storage Networking",
+            "code": "CS603",
+            "icon": "💾",
+            "description": "SAN, NAS, and cloud storage architectures, protocols, and management strategies.",
+            "materials": [
+                {
+                    "title": "Storage Architectures.pdf",
+                    "file": "uploads/course-materials/storage-arch.pdf",
+                    "type": "pdf"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Pattern Recognition",
+            "code": "CS604",
+            "icon": "🔬",
+            "description": "Statistical pattern recognition, feature extraction, classification, and clustering techniques.",
+            "materials": [
+                {
+                    "title": "Pattern Recognition Basics.pdf",
+                    "file": "uploads/course-materials/pattern-basics.pdf",
+                    "type": "pdf"
+                },
+                {
+                    "title": "Classification Algorithms.ppt",
+                    "file": "uploads/course-materials/classification.ppt",
+                    "type": "ppt"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Smart Grid Communication and Security",
+            "code": "CS605",
+            "icon": "⚡",
+            "description": "Communication protocols, security challenges, and AI-based solutions for smart grid systems.",
+            "materials": [
+                {
+                    "title": "Smart Grid Security.pdf",
+                    "file": "uploads/course-materials/smartgrid-security.pdf",
+                    "type": "pdf"
+                }
+            ]
+        }
+    ]
+}

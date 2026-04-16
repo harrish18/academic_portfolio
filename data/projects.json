@@ -1,0 +1,54 @@
+{
+    "currentProjects": [
+        {
+            "title": "Adaptive Cryptographic Intrusion Detection System for SDN-IoT Networks",
+            "description": "Developing an intelligent intrusion detection system that leverages adaptive cryptographic techniques and deep learning to secure Software-Defined Networking enabled IoT infrastructures against evolving cyber threats.",
+            "area": "Cybersecurity & AI",
+            "status": "Active"
+        },
+        {
+            "title": "Blockchain-Enabled Cybercrime Reporting System",
+            "description": "Designing a decentralized, tamper-proof cybercrime reporting platform using blockchain technology to ensure transparency, privacy protection, and immutable evidence recording for law enforcement agencies.",
+            "area": "Blockchain Security",
+            "status": "Active"
+        },
+        {
+            "title": "Privacy Protection Framework for Multimodal Large Language Models",
+            "description": "Investigating privacy vulnerabilities in multimodal LLMs and developing a comprehensive framework incorporating differential privacy, federated learning, and secure computation to protect sensitive data during model training and inference.",
+            "area": "AI & Privacy",
+            "status": "Active"
+        }
+    ],
+    "researchAreas": [
+        {
+            "title": "Artificial Intelligence and Machine Learning",
+            "description": "Deep learning architectures, transfer learning, federated learning, and AI model optimization for real-world applications.",
+            "icon": "🧠"
+        },
+        {
+            "title": "Cybersecurity and Intrusion Detection Systems",
+            "description": "Advanced threat detection using AI, network security analytics, and adaptive security frameworks for modern networks.",
+            "icon": "🔒"
+        },
+        {
+            "title": "Blockchain Security Systems",
+            "description": "Decentralized security architectures, smart contract security, and blockchain-based data integrity solutions.",
+            "icon": "⛓️"
+        },
+        {
+            "title": "Quantum Cryptography",
+            "description": "Quantum key distribution, post-quantum cryptographic algorithms, and quantum-safe communication protocols.",
+            "icon": "⚛️"
+        },
+        {
+            "title": "AI for Healthcare",
+            "description": "Medical image analysis, clinical decision support systems, and privacy-preserving health data analytics.",
+            "icon": "🏥"
+        },
+        {
+            "title": "AI for Smart Agriculture",
+            "description": "Crop disease detection, precision farming, and AI-driven agricultural monitoring systems.",
+            "icon": "🌾"
+        }
+    ]
+}

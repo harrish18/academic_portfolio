@@ -1,0 +1,89 @@
+{
+    "categories": [
+        {
+            "name": "Conferences",
+            "icon": "🎤",
+            "images": [
+                {
+                    "src": "uploads/gallery/conference-1.jpg",
+                    "caption": "IEEE International Conference on AI 2024",
+                    "date": "2024"
+                },
+                {
+                    "src": "uploads/gallery/conference-2.jpg",
+                    "caption": "ACM Security Symposium 2023",
+                    "date": "2023"
+                },
+                {
+                    "src": "uploads/gallery/conference-3.jpg",
+                    "caption": "International Conference on Blockchain 2023",
+                    "date": "2023"
+                }
+            ]
+        },
+        {
+            "name": "Workshops",
+            "icon": "🛠️",
+            "images": [
+                {
+                    "src": "uploads/gallery/workshop-1.jpg",
+                    "caption": "AI & Machine Learning Workshop 2024",
+                    "date": "2024"
+                },
+                {
+                    "src": "uploads/gallery/workshop-2.jpg",
+                    "caption": "Cybersecurity Hands-on Training 2023",
+                    "date": "2023"
+                }
+            ]
+        },
+        {
+            "name": "Research Lab",
+            "icon": "🔬",
+            "images": [
+                {
+                    "src": "uploads/gallery/lab-1.jpg",
+                    "caption": "AI Research Lab - Research Group Discussion",
+                    "date": "2024"
+                },
+                {
+                    "src": "uploads/gallery/lab-2.jpg",
+                    "caption": "Lab Infrastructure Setup",
+                    "date": "2023"
+                }
+            ]
+        },
+        {
+            "name": "Guest Lectures",
+            "icon": "🎓",
+            "images": [
+                {
+                    "src": "uploads/gallery/lecture-1.jpg",
+                    "caption": "Guest Lecture on Quantum Computing",
+                    "date": "2024"
+                },
+                {
+                    "src": "uploads/gallery/lecture-2.jpg",
+                    "caption": "Industry Expert Talk on Cybersecurity",
+                    "date": "2023"
+                }
+            ]
+        },
+        {
+            "name": "Student Events",
+            "icon": "👥",
+            "images": [
+                {
+                    "src": "uploads/gallery/event-1.jpg",
+                    "caption": "Student Research Symposium 2024",
+                    "date": "2024"
+                },
+                {
+                    "src": "uploads/gallery/event-2.jpg",
+                    "caption": "Hackathon - CyberSec Challenge 2023",
+                    "date": "2023"
+                }
+            ]
+        }
+    ]
+}

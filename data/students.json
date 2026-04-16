@@ -1,0 +1,81 @@
+{
+    "phdScholars": [
+        {
+            "name": "Mr. A. Rajesh Kumar",
+            "topic": "AI-Based Adaptive Intrusion Detection Systems for IoT Networks",
+            "status": "Ongoing",
+            "year": 2021,
+            "description": "Researching novel deep learning architectures for real-time intrusion detection in heterogeneous IoT environments with focus on adversarial robustness."
+        },
+        {
+            "name": "Ms. S. Priya Dharshini",
+            "topic": "Blockchain-Enabled Security Framework for Decentralized Systems",
+            "status": "Ongoing",
+            "year": 2022,
+            "description": "Developing a blockchain-based security framework that ensures data integrity and privacy in decentralized computing systems."
+        },
+        {
+            "name": "Mr. D. Karthik Singh",
+            "topic": "Quantum Cryptographic Protocols for Secure Communication",
+            "status": "Ongoing",
+            "year": 2022,
+            "description": "Investigating quantum key distribution protocols and post-quantum cryptographic methods for securing next-generation communication networks."
+        },
+        {
+            "name": "Ms. N. Meera Gupta",
+            "topic": "Privacy-Preserving AI in Healthcare Systems",
+            "status": "Ongoing",
+            "year": 2023,
+            "description": "Exploring federated learning and differential privacy techniques to enable secure AI model training on sensitive healthcare data."
+        }
+    ],
+    "mtechStudents": [
+        {
+            "name": "R. Vignesh",
+            "project": "Deep Learning Based Malware Detection System",
+            "year": 2025
+        },
+        {
+            "name": "K. Anitha",
+            "project": "Blockchain-Based Secure Data Sharing Framework",
+            "year": 2025
+        },
+        {
+            "name": "M. Sathish",
+            "project": "AI-Driven Network Traffic Analysis for Anomaly Detection",
+            "year": 2024
+        },
+        {
+            "name": "P. Divya",
+            "project": "Federated Learning for Privacy-Preserving Intrusion Detection",
+            "year": 2024
+        },
+        {
+            "name": "S. Arun Kumar",
+            "project": "Quantum-Resistant Cryptographic Protocol Design",
+            "year": 2024
+        }
+    ],
+    "btechStudents": [
+        {
+            "name": "V. Harish, S. Kavitha",
+            "project": "Smart Intrusion Detection System Using Machine Learning"
+        },
+        {
+            "name": "R. Deepika, M. Naveen",
+            "project": "AI-Powered Crop Disease Detection for Smart Agriculture"
+        },
+        {
+            "name": "K. Suresh, A. Lakshmi",
+            "project": "Secure Cloud Storage Using Blockchain Technology"
+        },
+        {
+            "name": "T. Pradeep, N. Saranya",
+            "project": "Real-Time Network Anomaly Detection Dashboard"
+        },
+        {
+            "name": "L. Ramya, B. Karthik",
+            "project": "Privacy-Preserving Data Analytics on Health Records"
+        }
+    ]
+}

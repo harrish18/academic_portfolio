@@ -1,0 +1,40 @@
+{
+    "patents": [
+        {
+            "id": 1,
+            "title": "AI-Based Adaptive Intrusion Detection System for IoT Networks",
+            "inventors": "P. Chinnasamy, R. Kumar, S. Venkatesh",
+            "patentNumber": "IN202441XXXXXX",
+            "status": "Published",
+            "year": 2024,
+            "description": "A novel intrusion detection system using adaptive deep learning algorithms for real-time threat detection in IoT environments."
+        },
+        {
+            "id": 2,
+            "title": "Blockchain-Based Tamper-Proof Digital Evidence Management System",
+            "inventors": "P. Chinnasamy, A. Sharma",
+            "patentNumber": "IN202341XXXXXX",
+            "status": "Filed",
+            "year": 2023,
+            "description": "A decentralized evidence management system leveraging blockchain technology for immutable storage and verification of digital forensic evidence."
+        },
+        {
+            "id": 3,
+            "title": "Quantum-Resistant Key Distribution Protocol for Smart Grid Networks",
+            "inventors": "P. Chinnasamy, D. Singh, K. Raghavan",
+            "patentNumber": "IN202341XXXXXX",
+            "status": "Granted",
+            "year": 2023,
+            "description": "A post-quantum cryptographic key distribution protocol designed for securing communication in smart grid infrastructures."
+        },
+        {
+            "id": 4,
+            "title": "Privacy-Preserving Federated Learning Framework for Healthcare AI",
+            "inventors": "P. Chinnasamy, N. Gupta",
+            "patentNumber": "IN202441XXXXXX",
+            "status": "Filed",
+            "year": 2024,
+            "description": "A framework that enables collaborative AI model training across healthcare institutions without sharing sensitive patient data."
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "phdScholars": [
+        {
+            "name": "Mr. A. Rajesh Kumar",
+            "topic": "AI-Based Adaptive Intrusion Detection Systems for IoT Networks",
+            "status": "Ongoing",
+            "year": 2021,
+            "description": "Researching novel deep learning architectures for real-time intrusion detection in heterogeneous IoT environments with focus on adversarial robustness."
+        },
+        {
+            "name": "Ms. S. Priya Dharshini",
+            "topic": "Blockchain-Enabled Security Framework for Decentralized Systems",
+            "status": "Ongoing",
+            "year": 2022,
+            "description": "Developing a blockchain-based security framework that ensures data integrity and privacy in decentralized computing systems."
+        },
+        {
+            "name": "Mr. D. Karthik Singh",
+            "topic": "Quantum Cryptographic Protocols for Secure Communication",
+            "status": "Ongoing",
+            "year": 2022,
+            "description": "Investigating quantum key distribution protocols and post-quantum cryptographic methods for securing next-generation communication networks."
+        },
+        {
+            "name": "Ms. N. Meera Gupta",
+            "topic": "Privacy-Preserving AI in Healthcare Systems",
+            "status": "Ongoing",
+            "year": 2023,
+            "description": "Exploring federated learning and differential privacy techniques to enable secure AI model training on sensitive healthcare data."
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "achievements": [
+        {
+            "id": 1,
+            "icon": "📄",
+            "title": "IEEE Publications",
+            "description": "Published multiple research papers in prestigious IEEE journals including IEEE Transactions on Network and Service Management and IEEE Access."
+        },
+        {
+            "id": 2,
+            "icon": "🎤",
+            "title": "Conference Organization",
+            "description": "Organized and chaired sessions at international conferences on AI, cybersecurity, and blockchain technology."
+        },
+        {
+            "id": 3,
+            "icon": "📝",
+            "title": "International Reviewer",
+            "description": "Served as reviewer for top-tier journals including IEEE, Elsevier, and Springer publications in AI and cybersecurity domains."
+        },
+        {
+            "id": 4,
+            "icon": "💡",
+            "title": "Research Innovation",
+            "description": "Developed novel cryptographic intrusion detection frameworks for IoT networks, advancing the field of network security."
+        },
+        {
+            "id": 5,
+            "icon": "🏆",
+            "title": "Best Paper Award",
+            "description": "Received best paper award at the International Conference on Computing, Communication and Networking Technologies (ICCCNT)."
+        },
+        {
+            "id": 6,
+            "icon": "🎓",
+            "title": "PhD Supervision",
+            "description": "Successfully supervising multiple PhD scholars working on cutting-edge research in AI, blockchain, and quantum cryptography."
+        },
+        {
+            "id": 7,
+            "icon": "🌐",
+            "title": "International Collaboration",
+            "description": "Established research collaborations with international universities and industry partners for joint research projects."
+        },
+        {
+            "id": 8,
+            "icon": "📚",
+            "title": "Book Chapters",
+            "description": "Authored chapters in internationally published books by Springer and Elsevier on AI in cybersecurity and blockchain healthcare."
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Dr. P. Chinnasamy</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+</head>
+<body class="admin-login-page">
+
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-card__header">
+        <div class="login-card__icon">🎓</div>
+        <h1 class="login-card__title">Admin Dashboard</h1>
+        <p class="login-card__subtitle">Dr. P. Chinnasamy — CMS Portal</p>
+      </div>
+      <form class="login-form" id="login-form">
+        <div class="form__group">
+          <label class="form__label" for="email">Email Address</label>
+          <input type="email" class="form__input" id="email" name="email"
+            placeholder="Enter admin email" required autocomplete="email">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="password">Password</label>
+          <input type="password" class="form__input" id="password" name="password"
+            placeholder="Enter password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="form__btn" id="login-btn" style="width:100%;justify-content:center;">
+          🔓 Sign In
+        </button>
+        <div id="login-error" class="login-error" style="display:none;color:#ef4444;margin-top:12px;text-align:center;font-size:0.9rem;"></div>
+      </form>
+      <div class="login-card__footer" style="text-align:center;margin-top:20px;">
+        <p style="color:var(--text-light);font-size:0.82rem;margin-bottom:8px;">Secured by Supabase Authentication</p>
+        <a href="../index.html" style="color:var(--primary);text-decoration:none;font-size:0.9rem;">← Back to Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supabase SDK and Logic -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/supabase-config.js"></script>
+  
+  <script>
+    const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // If already logged in redirect
+    sb.auth.getSession().then(({ data }) => {
+      if (data.session) window.location.href = 'dashboard.html';
+    });
+
+    document.getElementById('login-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      
+      const btn = document.getElementById('login-btn');
+      const errorEl = document.getElementById('login-error');
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      btn.textContent = 'Signing in...';
+      btn.disabled = true;
+      errorEl.style.display = 'none';
+
+      const { data, error } = await sb.auth.signInWithPassword({ email, password });
+
+      if (error) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = '❌ ' + error.message;
+        btn.textContent = '🔓 Sign In';
+        btn.disabled = false;
+      } else {
+        window.location.href = 'dashboard.html';
+      }
+    });
+  </script>
+</body>
+</html>

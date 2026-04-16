@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Admin CMS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+</head>
+
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar__header">
+            <div class="admin-sidebar__brand">
+                <span class="admin-sidebar__icon">🎓</span>
+                <span>Admin CMS</span>
+            </div>
+        </div>
+        <nav class="admin-sidebar__nav">
+            <a href="#" class="admin-nav-link active" data-section="dashboard"
+                onclick="switchSection('dashboard', this)">
+                <span class="admin-nav-link__icon">📊</span> Dashboard
+            </a>
+            <a href="#" class="admin-nav-link" data-section="publications"
+                onclick="switchSection('publications', this)">
+                <span class="admin-nav-link__icon">📄</span> Publications
+            </a>
+            <a href="#" class="admin-nav-link" data-section="research" onclick="switchSection('research', this)">
+                <span class="admin-nav-link__icon">🔬</span> Research Projects
+            </a>
+            <a href="#" class="admin-nav-link" data-section="scholars" onclick="switchSection('scholars', this)">
+                <span class="admin-nav-link__icon">🎓</span> Research Scholars
+            </a>
+            <a href="#" class="admin-nav-link" data-section="students" onclick="switchSection('students', this)">
+                <span class="admin-nav-link__icon">👥</span> Students
+            </a>
+            <a href="#" class="admin-nav-link" data-section="courses" onclick="switchSection('courses', this)">
+                <span class="admin-nav-link__icon">📚</span> Courses
+            </a>
+            <a href="#" class="admin-nav-link" data-section="gallery" onclick="switchSection('gallery', this)">
+                <span class="admin-nav-link__icon">🖼️</span> Gallery
+            </a>
+            <a href="#" class="admin-nav-link" data-section="patents" onclick="switchSection('patents', this)">
+                <span class="admin-nav-link__icon">💡</span> Patents
+            </a>
+            <a href="#" class="admin-nav-link" data-section="achievements"
+                onclick="switchSection('achievements', this)">
+                <span class="admin-nav-link__icon">🏆</span> Achievements
+            </a>
+            <a href="#" class="admin-nav-link" data-section="settings" onclick="switchSection('settings', this)">
+                <span class="admin-nav-link__icon">⚙️</span> Settings
+            </a>
+        </nav>
+        <div class="admin-sidebar__footer">
+            <a href="../index.html" class="admin-nav-link"><span class="admin-nav-link__icon">🌐</span> View Website</a>
+            <a href="#" class="admin-nav-link" onclick="logout()"><span class="admin-nav-link__icon">🚪</span>
+                Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Top Header -->
+        <header class="admin-header">
+            <button class="admin-header__toggle" onclick="toggleSidebar()">☰</button>
+            <h2 class="admin-header__title" id="section-title">Dashboard</h2>
+            <div class="admin-header__user">
+                <span id="admin-username">Admin</span>
+                <div class="admin-header__avatar">A</div>
+            </div>
+        </header>
+
+        <!-- Dashboard Overview -->
+        <div class="admin-content" id="content-area">
+
+            <!-- Dashboard Section -->
+            <section class="admin-section active" id="section-dashboard">
+                <div class="admin-stats">
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">📄</div>
+                        <div class="admin-stat-card__value" id="stat-publications">0</div>
+                        <div class="admin-stat-card__label">Publications</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">🔬</div>
+                        <div class="admin-stat-card__value" id="stat-projects">0</div>
+                        <div class="admin-stat-card__label">Research Projects</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">🎓</div>
+                        <div class="admin-stat-card__value" id="stat-scholars">0</div>
+                        <div class="admin-stat-card__label">PhD Scholars</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">📚</div>
+                        <div class="admin-stat-card__value" id="stat-courses">0</div>
+                        <div class="admin-stat-card__label">Courses</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">💡</div>
+                        <div class="admin-stat-card__value" id="stat-patents">0</div>
+                        <div class="admin-stat-card__label">Patents</div>
+                    </div>
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-card__icon">🏆</div>
+                        <div class="admin-stat-card__value" id="stat-achievements">0</div>
+                        <div class="admin-stat-card__label">Achievements</div>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <h3>Welcome to Admin Dashboard</h3>
+                    <p>Manage your academic portfolio content from this CMS. Use the sidebar to navigate between
+                        sections. All changes are saved to the database.</p>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section class="admin-section" id="section-publications">
+                <div class="admin-section__header">
+                    <h3>Manage Publications</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('publication')">+ Add
+                        Publication</button>
+                </div>
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchAdminTab(this, 'journals')">Journals</button>
+                    <button class="admin-tab" onclick="switchAdminTab(this, 'conferences')">Conferences</button>
+                    <button class="admin-tab" onclick="switchAdminTab(this, 'bookChapters')">Book Chapters</button>
+                </div>
+                <div class="admin-table-wrapper" id="publications-table">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Research Projects Section -->
+            <section class="admin-section" id="section-research">
+                <div class="admin-section__header">
+                    <h3>Manage Research Projects</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('project')">+ Add Project</button>
+                </div>
+                <div class="admin-table-wrapper" id="research-table"></div>
+            </section>
+
+            <!-- Scholars Section -->
+            <section class="admin-section" id="section-scholars">
+                <div class="admin-section__header">
+                    <h3>Manage Research Scholars</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('scholar')">+ Add Scholar</button>
+                </div>
+                <div class="admin-table-wrapper" id="scholars-table"></div>
+            </section>
+
+            <!-- Students Section -->
+            <section class="admin-section" id="section-students">
+                <div class="admin-section__header">
+                    <h3>Manage Students</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('student')">+ Add Student</button>
+                </div>
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchStudentTab(this, 'mtech')">M.Tech</button>
+                    <button class="admin-tab" onclick="switchStudentTab(this, 'btech')">B.Tech</button>
+                </div>
+                <div class="admin-table-wrapper" id="students-table"></div>
+            </section>
+
+            <!-- Courses Section -->
+            <section class="admin-section" id="section-courses">
+                <div class="admin-section__header">
+                    <h3>Manage Courses</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('course')">+ Add Course</button>
+                </div>
+                <div class="admin-table-wrapper" id="courses-table"></div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="admin-section" id="section-gallery">
+                <div class="admin-section__header">
+                    <h3>Manage Gallery</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('galleryImage')">+ Add
+                        Image</button>
+                </div>
+                <div class="admin-table-wrapper" id="gallery-table"></div>
+            </section>
+
+            <!-- Patents Section -->
+            <section class="admin-section" id="section-patents">
+                <div class="admin-section__header">
+                    <h3>Manage Patents</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('patent')">+ Add Patent</button>
+                </div>
+                <div class="admin-table-wrapper" id="patents-table"></div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="admin-section" id="section-achievements">
+                <div class="admin-section__header">
+                    <h3>Manage Achievements</h3>
+                    <button class="admin-btn admin-btn--primary" onclick="openModal('achievement')">+ Add
+                        Achievement</button>
+                </div>
+                <div class="admin-table-wrapper" id="achievements-table"></div>
+            </section>
+
+            <!-- Settings Section -->
+            <section class="admin-section" id="section-settings">
+                <div class="admin-card">
+                    <h3>Export Data</h3>
+                    <p style="margin:12px 0;">Download your CSV data files to commit to your repository.</p>
+                    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('publications')">📄
+                            Publications</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('projects')">🔬
+                            Projects</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('scholars')">🎓
+                            Scholars</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('students')">👥
+                            Students</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('courses')">📚 Courses</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('gallery')">🖼️
+                            Gallery</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('patents')">💡 Patents</button>
+                        <button class="admin-btn admin-btn--primary" onclick="exportData('achievements')">🏆
+                            Achievements</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="admin-modal" id="admin-modal">
+        <div class="admin-modal__content">
+            <div class="admin-modal__header">
+                <h3 id="modal-title">Add Item</h3>
+                <button class="admin-modal__close" onclick="closeModal()">&times;</button>
+            </div>
+            <form class="admin-modal__form" id="modal-form" onsubmit="handleModalSubmit(event)">
+                <div id="modal-fields">
+                    <!-- Dynamic fields injected by JS -->
+                </div>
+                <div class="admin-modal__actions">
+                    <button type="button" class="admin-btn" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="admin-btn admin-btn--primary" id="modal-submit-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="admin-toast" id="admin-toast"></div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase-config.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
