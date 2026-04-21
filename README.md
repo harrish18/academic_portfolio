@@ -1,5 +1,7 @@
 # 🎓 Academic Portfolio — Dr. P. Chinnasamy
 
+🔗 Live Demo : https://academicwebsit.netlify.app/
+
 A professional academic portfolio website built for **Dr. P. Chinnasamy**, Assistant Professor in the Department of Computer Science and Engineering at **Kalasalingam Academy of Research and Education**.
 
 This project was developed by **[harrish18](https://github.com/harrish18)** as a comprehensive web platform to showcase the professor's academic profile, research contributions, and teaching resources.
